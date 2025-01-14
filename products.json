@@ -61,6 +61,12 @@
       "name": "tv electronics",
       "price": "100",
       "description": "test desc"
+    },
+    {
+      "id": "11f9",
+      "name": "skincaare",
+      "price": "50000",
+      "description": "sefjesofj"
     }
   ]
 }

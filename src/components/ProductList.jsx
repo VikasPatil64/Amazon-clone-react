@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -16,6 +18,8 @@ function ProductList() {
   };
 
   return (
+    <>
+    <h1>Product List</h1>
     <div>
       <Table striped bordered hover size="sm">
         <thead>
@@ -38,6 +42,8 @@ function ProductList() {
         </tbody>
       </Table>
     </div>
+    <Button variant="info"><Link to="/add-product" >Add Product</Link></Button>
+    </>
   );
 }
 
