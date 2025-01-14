@@ -1,0 +1,416 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Logo Section */
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("/src/assets/images/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+/* Hover Border Effect */
+.border-header {
+    border: 1.25px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.border-header:hover {
+    border: 1.25px solid white;
+}
+
+/* Address Section */
+.add1 {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+}
+
+.add2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Search Section */
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 600px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 60px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px; /* Container size */
+    height: 100%; /* Match the height of the search bar */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #febd68; /* Yellow background */
+    border-top-right-radius: 3px; /* Rounded corners on top-right */
+    border-bottom-right-radius: 3px; /* Rounded corners on bottom-right */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.search-icon:hover {
+    background-color: #f9a941; /* Slightly darker yellow on hover */
+}
+
+.search-icon i {
+    font-size: 18px; /* Size of the magnifying glass */
+    color: #0f1111; /* Icon color */
+}
+
+
+
+/* Sign-in and Cart Sections */
+span {
+    font-size: 0.8rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.nav-cart i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cart-link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-cart {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav-cart i {
+        font-size: 20px;
+    }
+}
+/* panel style */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.panel-options p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel-options{
+    width: 65%;
+    font: size 0.85rem; ;
+}
+.paneldeals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* herosection */
+.hero-section{
+    background-image: url("/src/assets/images/hero_image.jpg");
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.heromsg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.heromsg a{
+    color: #007815;
+
+}
+/* Shop section */
+.shop-items {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the items wrap to the next row */
+    justify-content: space-between; /* Even space between items */
+    padding: 20px;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+/* Product box styling */
+.product {
+    flex: 0 0 23%; /* Each product box will take 23% of the container width */
+    margin-bottom: 20px; /* Adds space below each box */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for the product box */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.Addcart{
+    background-color: rgb(31, 115, 205);
+    color: white;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.Addcart-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgb(39, 85, 176); /* Border color to match theme */
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Light background for visibility */
+    padding: 10px;
+    gap: 10px; /* Space between buttons and quantity */
+}
+
+.Addcart-action button {
+    background-color: #5291d4; /* Blue color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Addcart-action button:hover {
+    background-color: #075298; /* Darker blue on hover */
+}
+
+.Addcart-action span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark color for quantity */
+    margin: 0 10px; /* Space on either side of quantity */
+    width: 40px;
+    text-align: center;
+}
+
+.Addcart-action button:disabled {
+    background-color: #d6d6d6; /* Disabled button style */
+    cursor: not-allowed;
+}
+
+.Addcart:hover {
+    background-color: rgb(25, 96, 173); /* Darker blue on hover */
+}
+/* Box Image Styling */
+.box-image img {
+    width: 100%; /* Ensures the image fits the container width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image maintains aspect ratio and fills */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Footer Panels */
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+ul a {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid transparent;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url("src/assets/images/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 100px;
+}
+
+.pages {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.pages:hover {
+    border-bottom: 2px solid #333;
+    cursor: pointer;
+}
+
+.copyright {
+    padding-top: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* Ensuring footer stays at the bottom */
+body, html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Ensure footer does not overlap */
+footer {
+    clear: both;
+}
+
+ p{
+    margin-bottom: 0 !important;
+}

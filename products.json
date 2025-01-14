@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "name": "Skincare Essentials",
+      "image": "box1_image.jpg",
+      "price": 29.99,
+      "description": "Description for Product 1",
+      "id": "9666"
+    },
+    {
+      "name": "Haircare Products",
+      "image": "box2_image.jpg",
+      "price": 39.99,
+      "description": "Description for Product 2",
+      "id": "978f"
+    },
+    {
+      "name": "Personal Hygiene",
+      "image": "box3_image.jpg",
+      "price": 49.99,
+      "description": "Description for Product 3",
+      "id": "a2f2"
+    },
+    {
+      "name": "Fitness & Wellness",
+      "image": "box4_image.jpg",
+      "price": 59.99,
+      "description": "Description for Product 4",
+      "id": "c5e0"
+    },
+    {
+      "name": "Beauty Products",
+      "image": "box5_image.jpg",
+      "price": 69.99,
+      "description": "Description for Product 5",
+      "id": "dede"
+    },
+    {
+      "name": "Health Supplements",
+      "image": "box6_image.jpg",
+      "price": 79.99,
+      "description": "Description for Product 6",
+      "id": "e8f2"
+    },
+    {
+      "name": "Organic Products",
+      "image": "box7_image.jpg",
+      "price": 89.99,
+      "description": "Description for Product 7",
+      "id": "5ccc"
+    },
+    {
+      "name": "Healthy Lifestyle",
+      "image": "box8_image.jpg",
+      "price": 99.99,
+      "description": "Description for Product 8",
+      "id": "5b8e"
+    },
+    {
+      "id": "0b5f",
+      "name": "tv electronics",
+      "price": "100",
+      "description": "test desc"
+    }
+  ]
+}
