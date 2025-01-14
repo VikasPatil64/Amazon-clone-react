@@ -88,10 +88,14 @@ const Home = () => {
           return (
             <div className="product" key={productIndex}>
               <div className="box-image">
-                <img
-                  src={`/src/assets/images/${product.image}`}
-                  alt="${product.name}"
-                />
+               {product.image && <img
+                 src={`/src/assets/images/${product.image}`}
+                 alt="${product.name}"
+               />}
+               {!product.image && <img
+                 src={`/src/assets/images/default.jpg`}
+                 alt="${product.name}"
+               />}
               </div>
               <div className="box-content">
                 <h3>{product.name}</h3>

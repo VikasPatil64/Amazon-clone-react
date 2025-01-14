@@ -45,10 +45,18 @@ const Cart = () => {
             return (
               <div className="cart-item" key={productIndex}>
                 <div className="box-image">
-                  <img
+                  {product.image &&
+                    <img
                     src={`/src/assets/images/${product.image}`}
                     alt="${product.name}"
                   />
+                  }
+                   {!product.image &&
+                    <img
+                    src={`/src/assets/images/default.jpg`}
+                    alt="${product.name}"
+                  />
+                  }
                 </div>
                 <div className="box-content">
                   <h3>{product.name}</h3>

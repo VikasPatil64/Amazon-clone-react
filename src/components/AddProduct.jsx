@@ -67,7 +67,6 @@ function AddProduct() {
                 placeholder="Product name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                size="20"
               />
             </Form.Group>
           </Col>
@@ -79,7 +78,7 @@ function AddProduct() {
               <Form.Control
                 type="number"
                 placeholder="Product price"
-                value={name}
+                value={price}
                 onChange={(e) => setPrice(e.target.value)}
               />
             </Form.Group>
@@ -92,7 +91,7 @@ function AddProduct() {
               <Form.Control
                 as="textarea"
                 placeholder="Product description"
-                value={name}
+                value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
             </Form.Group>

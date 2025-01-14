@@ -67,6 +67,18 @@
       "name": "skincaare",
       "price": "50000",
       "description": "sefjesofj"
+    },
+    {
+      "id": "e144",
+      "name": "shoes",
+      "price": "500",
+      "description": "new shoes"
+    },
+    {
+      "id": "b4a3",
+      "name": "saree ",
+      "price": "3000",
+      "description": "New stock"
     }
   ]
 }
