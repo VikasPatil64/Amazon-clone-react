@@ -3,6 +3,9 @@ import { Link } from "react-router";
 
 
 const Header = () => {
+
+  const userData = JSON.parse(sessionStorage.getItem("user"));
+
     return (
         <header>
         <div className="navbar">
@@ -38,7 +41,7 @@ const Header = () => {
           {/* <!-- Sign-in Section --> */}
           <div className="nav-signin border-header">
             <p>
-              <span>Hello, sign in</span>
+              <span>Hello, {userData ? userData.name :<Link to="/SignUp">sign in</Link>}</span>
             </p>
             <p className="nav-second">Account & Lists</p>
           </div>
