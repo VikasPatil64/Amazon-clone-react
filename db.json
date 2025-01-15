@@ -80,5 +80,42 @@
       "price": "3000",
       "description": "New stock"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "password": "password123",
+      "number": "1234567890"
+    },
+    {
+      "id": "2",
+      "name": " Jane Doe",
+      "email": "janedoe@gmail.com",
+      "password": "password456",
+      "number": "0987654321"
+    },
+    {
+      "id": "3",
+      "name": "Alice",
+      "email": "alice@gmail.com",
+      "password": "password789",
+      "number": "1230984567"
+    },
+    {
+      "id": "bb39",
+      "name": "vikas",
+      "number": "7020149568",
+      "email": "vikky@gmail.com",
+      "password": "pass@123"
+    },
+    {
+      "id": "5f55",
+      "name": "jay",
+      "number": "10203040520",
+      "email": "jay@gmali.com",
+      "password": "12345"
+    }
   ]
 }
